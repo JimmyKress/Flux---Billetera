@@ -1,0 +1,103 @@
+@media (max-width: 600px) {
+  .bouncing-ball {
+    animation: fly-mobile 10s ease-in-out infinite;
+  }
+}
+
+@keyframes fly-mobile {
+  0% {
+    left: 5vw;
+    top: 60vh;
+    transform: rotate(0deg) scale(1);
+  }
+  20% {
+    left: 20vw;
+    top: 50vh;
+    transform: rotate(-8deg) scale(1.05);
+  }
+  40% {
+    left: 50vw;
+    top: 40vh;
+    transform: rotate(-4deg) scale(1.08);
+  }
+  60% {
+    left: 80vw;
+    top: 50vh;
+    transform: rotate(6deg) scale(1.05);
+  }
+  80% {
+    left: 50vw;
+    top: 70vh;
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    left: 5vw;
+    top: 60vh;
+    transform: rotate(0deg) scale(1);
+  }
+}
+.ball-animation-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bouncing-ball {
+  position: absolute;
+  top: 60vh;
+  left: 10vw;
+  width: 140px;
+  height: 140px;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  animation: fly-across 14s ease-in-out infinite;
+}
+
+@keyframes fly-across {
+  0% {
+    left: 10vw;
+    top: 60vh;
+    transform: rotate(0deg) scale(1);
+  }
+  15% {
+    left: 20vw;
+    top: 50vh;
+    transform: rotate(-8deg) scale(1.05);
+  }
+  30% {
+    left: 40vw;
+    top: 40vh;
+    transform: rotate(-4deg) scale(1.08);
+  }
+  45% {
+    left: 70vw;
+    top: 30vh;
+    transform: rotate(6deg) scale(1.12);
+  }
+  60% {
+    left: 80vw;
+    top: 50vh;
+    transform: rotate(12deg) scale(1.05);
+  }
+  75% {
+    left: 60vw;
+    top: 70vh;
+    transform: rotate(0deg) scale(1);
+  }
+  90% {
+    left: 30vw;
+    top: 80vh;
+    transform: rotate(-10deg) scale(0.98);
+  }
+  100% {
+    left: 10vw;
+    top: 60vh;
+    transform: rotate(0deg) scale(1);
+  }
+}

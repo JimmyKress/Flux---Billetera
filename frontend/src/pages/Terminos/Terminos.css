@@ -1,0 +1,120 @@
+.terminos-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  color: #0f172a;
+}
+
+.terminos-card {
+  width: min(980px, 100%);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.terminos-card h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.terminos-subtitle {
+  margin: 0;
+  color: #475569;
+}
+
+.terminos-content {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  max-height: 320px;
+  overflow: auto;
+  background: #f9fafb;
+}
+
+.terminos-html h1,
+.terminos-html h2,
+.terminos-html h3 {
+  color: #0f172a;
+}
+
+.terminos-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.firma-section {
+  border: 1px dashed #cbd5f5;
+  border-radius: 12px;
+  padding: 16px;
+  background: #f1f5f9;
+}
+
+.firma-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firma-canvas {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-top: 12px;
+}
+
+.firma-hint {
+  margin: 8px 0 0;
+  color: #64748b;
+}
+
+.btn-clear {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.terminos-error {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.terminos-success {
+  color: #166534;
+  background: #dcfce7;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .terminos-card {
+    padding: 20px;
+  }
+
+  .terminos-content {
+    max-height: 240px;
+  }
+}
